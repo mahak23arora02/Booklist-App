@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklist App</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    body,tr,td{
+        background-color: black;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary"></i>My <span class="text-primary">Book</span>List</h1>
+        <form id="book-form">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" placeholder="Enter the Title" class="form-control" id="title"/>
+            </div>
+            <div class="form-group">
+                <label>Author</label>
+                <input type="text" placeholder="Enter the Author" class="form-control" id="author"/>
+            </div>
+            <div class="form-group">
+                <label>ISBN</label>
+                <input type="text" placeholder="Enter the ISBN" class="form-control" id="isbn"/>
+            </div>
+            <input type="submit" class="btn btn-primary btn-block" value="Add Book" id="book-form" /> 
+        </form>
+        
+        <table class="table table-striped mt-5">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>ISBN</th>
+                <th></th>
+            </tr>
+        </thead>
+            <tbody id="book-list">
+            </tbody>
+     </table>
+    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
